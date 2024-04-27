@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+ app:
+    build: ./api
+    ports:
+      - "3000:3020"
+    depends_on:
+      - db
+    enviroment:
+      - NODE_ENV=development
+db:
+    image: mongo
+    ports:
+      -"27020:27020"
+    volumes:
+      - mongodb_data:/data/db20
+volumes:
+    mongodb_data:
