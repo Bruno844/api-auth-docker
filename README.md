@@ -38,9 +38,8 @@ Simple API REST de autenticacion de usuarios conectada a una base de datos en la
 ```
 
 
-## Configuracion de docker para desplegar nuestra api rest
+## Configuracion del archivo Dockerfile para desplegar nuestra api rest
 
-1) Configurar nuestro archivo 'Dockerfile'
 a)  FROM: especificamos que version de node va a    tener nuestra aplicacion.
  
 b) RUN: ejercutamos mkdir para la creeacion de la ruta que colocamos despues en caso de que no esten creadas.
